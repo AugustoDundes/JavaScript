@@ -8,9 +8,20 @@
     <title>Exercício</title>
 </head>
 <body>
-        <h2>Data Atual:</h2>
-        <h3 id="hora_atual"></h3>
-        
+  
+    <h2>Adicione algo à lista:</h2>
+    <form id="listForm" onsubmit="verificarNumero(event);">
+            <label for="textInput" >Texto:</label>
+            <input type="text" id="textInput" placeholder="Insira um texto">
+            <button id="adicionar" type="submit">Adicionar</button>
+            <button id="limpar" type="submit">Resetar lista</button>
+    </form>
+    <div id="lista">
+        <h4>Lista:</h4>
+        <ul id="listaItens">
+        </ul>
+</div>
+
     <form action="semana3.html">
         <button>Voltar para Exercícios</button>
     </form>

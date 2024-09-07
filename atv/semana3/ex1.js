@@ -1,6 +1,38 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let data = new Date();
-    let format = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    let dataFormatada = data.toLocaleDateString('pt-BR', format);
-    document.getElementById("hora_atual").textContent = dataFormatada.charAt(0).toUpperCase() + dataFormatada.slice(1)
-});
+let listArray = [];
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('adicionar').addEventListener('click', function (event) {
+                event.preventDefault();
+                let lista = document.getElementById('listaItens');
+                let texto = document.getElementById('textInput').value;
+                if(texto != "")
+                {
+                    listArray.push(texto);
+                    listArray.sort();
+                    lista.innerHTML = "";
+
+                    listArray.forEach(function (item, index) {
+                        let li = document.createElement('li');
+                        let h6_item = document.createElement('h6');
+                        h6_item.textContent = item;
+                        li.appendChild(h6_item);
+                        li.setAttribute("class", "list-group-item");
+                        lista.appendChild(li);
+                        document.getElementById('textInput').value = "";
+                        document.getElementById('textInput').focus();
+                    });
+                
+                }
+                
+                
+            });
+
+            document.getElementById('limpar').addEventListener('click', function (event) {
+                event.preventDefault();
+                listArray = [];
+                let lista = document.getElementById('listaItens');
+                lista.innerHTML = "";
+                document.getElementById('textInput').focus();
+            });
+        });
+
+
