@@ -25,14 +25,6 @@ let listArray = [];
                 
                 
             });
-
-            document.getElementById('limpar').addEventListener('click', function (event) {
-                event.preventDefault();
-                listArray = [];
-                let lista = document.getElementById('listaItens');
-                lista.innerHTML = "";
-                document.getElementById('textInput').focus();
-            });
         });
 
 
