@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercícios</title>
+    <title>Exercício</title>
+    <!-- Incluindo o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Incluindo o JavaScript do Bootstrap e suas dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <body>
-        <form action="ex1.html"><button>atividade 1</button></form>
-    </body>
-    <body>
-        <form action="ex2.html"><button>atividade 2</button></form>
-    </body>
-    <body>
-        <form action="ex3.html"><button>atividade 3</button></form>
-    </body>
-    <body>
-        <form action="../../index.html"><button>Voltar para Semanas</button></form>
-    </body>
-
+    <div class="container">
+        <div class="btn-group">
+            <form action="ex1.html" class="mb-2">
+                <button type="submit" class="btn btn-custom btn-lg">Atividade 1</button>
+            </form>
+            <form action="ex2.html" class="mb-2">
+                <button type="submit" class="btn btn-custom btn-lg">Atividade 2</button>
+            </form>
+            <form action="ex3.html" class="mb-2">
+                <button type="submit" class="btn btn-custom btn-lg">Atividade 3</button>
+            </form>
+            <form action="../../index.html">
+                <button type="submit" class="btn btn-custom btn-lg">Voltar para Semanas</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <form action="atv/semana1/semana1.html">
-        <button>Semana 1</button>
-    </form>
-    <form action="atv/semana2/semana2.html">
-        <button>Semana 2</button>
-    </form>
-    <form action="atv/semana3/semana3.html">
-        <button>Semana 3</button>
-    </form>
-    
+    <div class="container text-center">
+        <header>
+            <h1>Atividades</h1>
+        </header>
+        <div class="btn-group-vertical mt-4">
+            <form action="atv/semana1/semana1.html" method="get">
+                <button type="submit" class="btn btn-custom btn-lg mt-2">Semana 1</button>
+            </form>
+            <form action="atv/semana2/semana2.html" method="get">
+                <button type="submit" class="btn btn-custom btn-lg mt-2">Semana 2</button>
+            </form>
+            <form action="atv/semana3/semana3.html" method="get">
+                <button type="submit" class="btn btn-custom btn-lg mt-2">Semana 3</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

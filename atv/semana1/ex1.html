@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <script language="JavaScript" type="text/JavaScript" src="ex1.js">
-    </script>
+    <head>
+    <script language="JavaScript" type="text/JavaScript" src="ex1.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <form action="ex2.html"><button>Próxima atividade</button></form>
-    <form action="semana1.html">
-        <button>Voltar para Exercícios</button>
-    </form>
+    <div class="container text-center">
+        <div class="btn-group-vertical">
+            <form action="ex2.html">
+                <button type="submit" class="btn btn-custom btn-lg">Próxima atividade</button>
+            </form>
+            <form action="semana1.html">
+                <button type="submit" class="btn btn-custom btn-lg">Voltar para Exercícios</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
